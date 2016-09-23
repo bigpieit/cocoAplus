@@ -486,7 +486,7 @@ static void solve_l2r_l1l2_svc(
 			double val = xi->value;
 			QD[i] += val*val;
 			w[xi->index-1] += y[i]*alpha[i]*val;
-			dw[xi->index-1] += y[i]*dalpha[i]*val;
+			dw[xi->index-1] += y[i]*dalpha[i]*val;// compare to the other one this is where we update the alpha
 			xi++;
 		}
 		index[i] = i;
